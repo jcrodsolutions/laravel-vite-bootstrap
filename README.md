@@ -1,4 +1,4 @@
-<a href="https://github.com/jcrodsolutions"><img src="https://jcrodsolutions.com/resources/img/logo.png"/></a>
+<img src="https://jcrodsolutions.com/resources/img/logo.png"/>
 
 # Setup [Laravel 11](https://laravel.com) with [Bootstrap](https://getbootstrap.com/) using [Vite](https://vitejs.dev/)
 
@@ -85,6 +85,14 @@ Here's an example to get you going:
 
 </html>
 ```
+
+## How to make this demo work
+```bash
+└─▶ git clone https://github.com/jcrodsolutions/laravel-vite-bootstrap.git
+└─▶ cd laravel-vite-bootstrap
+└─▶ composer install && npm install && npm run build
+```
+If you see no errors, you're good to go.
 
 ## Contributing
 
