@@ -63,6 +63,10 @@ export default defineConfig({
   </head>
 ```
 
+## Need to customize bootsrap?
+Please check the included resources/scss/app.scss file.
+Also modify vite.config.js and blade layouts to include 'resources/scss/app.scss' as well
+
 ## Ready to go?
   - To check if everything is ok, run
 ```bash
