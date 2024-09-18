@@ -15,7 +15,10 @@
             <d class="col"><img src="https://jcrodsolutions.com/resources/img/logo.png" alt="JCRodSolutions"></d>
         </d>
         <div class="row text-center py-2">
-            <div class="col border border-end-0 text-uppercase">@lang("Hello")</div>
+            <div class="col border border-end-0 text-uppercase">
+                <i class="fas fa-user-shield fa-pull-left fa-beat text-info"></i>
+                @lang("Hello")
+            </div>
             <div class="col-1 border-bottom border-danger"></div>
             <div class="col border border-start-0 text-primary fw-bold">@lang("WORLD")</div>
         </div>
@@ -26,7 +29,7 @@
         </div>
         <div class="row text-center py-3">
             <div class="col col-offset-2 text-center ">
-                <button class="btn btn-primary btn-lg">GO!</button>
+                <button class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-right fa-pull-left fa-border"></i>GO!</button>
             </div>
         </div>
     </div>

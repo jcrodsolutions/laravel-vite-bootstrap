@@ -10,15 +10,28 @@ From the folder of your preference type:
 
 Install Bootstrap and PopperJs:
 ```bash
-└─▶ cd laravel-vite-bootstrap/
-└─▶ npm install bootstrap @popperjs/core
+cd laravel-vite-bootstrap/
+npm install bootstrap @popperjs/core
+```
+1a (optional) Install Font Awesome
+For extra fun, you can also install Fontawesome
+```bash
+npm install @fortawesome/fontawesome-free
 ```
 
 ## Step 2: Tell Vite you're going to use bootstrap
-  - Open resources/css/app.scss
+  - Open resources/css/app.css
   - Paste the following 
 ```css
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+/** optional if you wan to use FontAwesome. Uncomment lines as you desire */
+/**@import 'fontawesome-free/css/all.min.css';*/
+/**@import '@fortawesome/fontawesome-free/css/all.min.css';*/
+/** or, import only the ones you need */
+@import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+@import '@fortawesome/fontawesome-free/css/solid.min.css';
+/* @import '@fortawesome/fontawesome-free/css/brands.min.css'; */
 ```
   - Open resources/js/bootstrap.js
   - Paste the following: 
@@ -66,7 +79,10 @@ Here's an example to get you going:
             <d class="col"><img src="https://jcrodsolutions.com/resources/img/logo.png" alt="JCRodSolutions"></d>
         </d>
         <div class="row text-center py-2">
-            <div class="col border border-end-0 text-uppercase">@lang("Hello")</div>
+            <div class="col border border-end-0 text-uppercase">
+                <i class="fas fa-user-shield fa-pull-left fa-beat text-info"></i>
+                @lang("Hello")
+            </div>
             <div class="col-1 border-bottom border-danger"></div>
             <div class="col border border-start-0 text-primary fw-bold">@lang("WORLD")</div>
         </div>
@@ -77,7 +93,7 @@ Here's an example to get you going:
         </div>
         <div class="row text-center py-3">
             <div class="col col-offset-2 text-center ">
-                <button class="btn btn-primary btn-lg">GO!</button>
+                <button class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-right fa-pull-left fa-border"></i>GO!</button>
             </div>
         </div>
     </div>
@@ -88,12 +104,12 @@ Here's an example to get you going:
 
 ## How to make this demo work
 ```bash
-└─▶ git clone https://github.com/jcrodsolutions/laravel-vite-bootstrap.git
-└─▶ cd laravel-vite-bootstrap
-└─▶ composer install && npm install && npm run build
-└─▶ cp .env.example .env
-└─▶ php artisan key:generate
-└─▶ php artisan migrate
+git clone https://github.com/jcrodsolutions/laravel-vite-bootstrap.git
+cd laravel-vite-bootstrap
+composer install && npm install && npm run build
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
 ```
 If you see no errors, you're good to go.
 
