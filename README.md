@@ -28,17 +28,40 @@ npm install @fortawesome/fontawesome-free
 /** optional if you wan to use FontAwesome. Uncomment lines as you desire */
 /**@import 'fontawesome-free/css/all.min.css';*/
 /**@import '@fortawesome/fontawesome-free/css/all.min.css';*/
+
 /** or, import only the ones you need */
 @import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 @import '@fortawesome/fontawesome-free/css/solid.min.css';
 /* @import '@fortawesome/fontawesome-free/css/brands.min.css'; */
 ```
-  - Open resources/js/bootstrap.js
+  - Open resources/js/app.js
   - Paste the following: 
 ```js
 import 'bootstrap';
 ```
-  - vite.config.js should be already aware of these two files.
+  - Both your vite.config.js and blade layouts should aware of these two files. By default vite.config.js already has them.
+
+```javascript
+// vite.config.js
+export default defineConfig({
+    // ... other config
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+    ],
+    // ... more configs
+});
+```
+```html5
+  <!-- welcome.blade.php -->
+  <head>
+    ...
+    @vite(['resources/scss/app.css', 'resources/js/app.js'])
+    ...
+  </head>
+```
 
 ## Ready to go?
   - To check if everything is ok, run

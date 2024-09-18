@@ -1,0 +1,19 @@
+$white: #f2f2f2;
+
+$theme-colors: (
+    "light":      #e6e4d0,
+    "dark":       #1a1b61,
+    "primary":    #2a8d5a,
+    "secondary":  #259b62,
+    "info":       #2cb489,
+    "accent1":    #084432,
+    "accent2":    #447e90,
+    "accent3":    #93ada7,
+    "success":    #12af2d,
+    "warning":    #f8c712,
+    "danger":     #f60747,
+);
+
+// Import Bootstrap styles
+@import 'bootstrap/scss/bootstrap.scss';
+// @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';

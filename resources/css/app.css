@@ -1,9 +1,9 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
 
 /** optional if you wan to use FontAwesome. Uncomment lines as you desire */
-/**@import 'fontawesome-free/css/all.min.css';*/
-/**@import '@fortawesome/fontawesome-free/css/all.min.css';*/
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 /** or, import only the ones you need */
-@import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
-@import '@fortawesome/fontawesome-free/css/solid.min.css';
+/* @import '@fortawesome/fontawesome-free/css/fontawesome.min.css'; */
+/* @import '@fortawesome/fontawesome-free/css/solid.min.css'; */
 /* @import '@fortawesome/fontawesome-free/css/brands.min.css'; */
