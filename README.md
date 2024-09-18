@@ -91,6 +91,9 @@ Here's an example to get you going:
 └─▶ git clone https://github.com/jcrodsolutions/laravel-vite-bootstrap.git
 └─▶ cd laravel-vite-bootstrap
 └─▶ composer install && npm install && npm run build
+└─▶ cp .env.example .env
+└─▶ php artisan key:generate
+└─▶ php artisan migrate
 ```
 If you see no errors, you're good to go.
 
