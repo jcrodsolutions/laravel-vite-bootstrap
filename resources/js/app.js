@@ -1,8 +1,8 @@
-import 'bootstrap';
+// this comes with laravel default installation when creating a project from scratch
+import  './bootstrap';
 
-//Font Awesome
-// import '@fortawesome/fontawesome-free/js/all';
-// These are only needed in special cases
-// import '@fortawesome/fontawesome-free/js/fontawesome';
-// import '@fortawesome/fontawesome-free/js/solid';
-// import '@fortawesome/fontawesome-free/js/brands';
+// To import Bootstrap Javascript assets
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+// Uncomment this if you have a custom js for your application
+// import './custom.js';

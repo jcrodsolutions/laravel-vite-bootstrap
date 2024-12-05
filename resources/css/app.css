@@ -1,9 +1,15 @@
-/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+/** Don't import Bootstrap here if you are going to import it with Sass */
+@import  'bootstrap/dist/css/bootstrap.min.css';
 
 /** optional if you wan to use FontAwesome. Uncomment lines as you desire */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 /** or, import only the ones you need */
-/* @import '@fortawesome/fontawesome-free/css/fontawesome.min.css'; */
-/* @import '@fortawesome/fontawesome-free/css/solid.min.css'; */
-/* @import '@fortawesome/fontawesome-free/css/brands.min.css'; */
+/** @import  '@fortawesome/fontawesome-free/css/fontawesome.min.css'; */
+/** @import  '@fortawesome/fontawesome-free/css/solid.min.css'; */
+/** @import '@fortawesome/fontawesome-free/css/brands.min.css'; */
+
+/** If you have a custom.css uncomment this line */
+/** 
+@import './custom.css';
+*/
